@@ -11,3 +11,8 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
+
+decap_cms:
+  backend:
+    name: git-gateway
+    branch: main  # Branch for the CMS to operate on

@@ -11,8 +11,13 @@
 </head>
 <body>
 	<script>
-        DecapCMS.init({config: 'config.yml'});
-    </script>
+		CMS.init({ 
+		  config: { 
+			backend: { name: 'git-gateway', branch: 'main' },
+			load_config_file: false,
+		  },
+		});
+	  </script>
 	<header>
 		<h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
 	</header>
