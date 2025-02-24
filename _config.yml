@@ -1,0 +1,13 @@
+title: "My Website"
+baseurl: ""  # Leave empty for GitHub Pages
+url: "https://stewarthines.github.io"
+environment: development
+
+sass:
+  sass_dir: _sass
+  style: compressed        # Compilation style (optional)
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
