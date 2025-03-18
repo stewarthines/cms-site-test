@@ -7,3 +7,27 @@
 .flex {
   @include flex-center;
 }
+
+.site-header {
+  padding:1em 0;
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}

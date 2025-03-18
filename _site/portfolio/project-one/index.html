@@ -5,6 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Awesome Project</title>
 	<link rel="stylesheet" href="/assets/css/main.css">
+	<script>
+		if (window.netlifyIdentity) {
+		  window.netlifyIdentity.on("init", (user) => {
+			if (!user) {
+			  window.netlifyIdentity.on("login", () => {
+				document.location.href = "/admin/";
+			  });
+			}
+		  });
+		}
+	  </script>
 	
 	  <script src="http://127.0.0.1:35729/livereload.js"></script>
 	
@@ -18,25 +29,26 @@
 		  },
 		});
 	  </script>
-	<header>
-		<h1><a href="/">My Website</a></h1>
-	</header>
-	<nav>
-  <a href="/">Home</a>
-  <a href="/blog/">Blog</a>
-  <a href="/portfolio/">Portfolio</a>
-  <a href="/about/">About</a>
-</nav>
-<nav>
-  <a href="/">Home</a>
-  <a href="/blog/">Blog</a>
-  <a href="/portfolio/">Portfolio</a>
-  <a href="/about/">About</a>
-</nav>
-<main>
-	<h1>Portfolio</h1>
-	<p>This project was built using Jekyll!</p>
+	<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">Stewart Hines</a>
+    <nav>
+      <ul>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/portfolio/">Portfolio</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
+	
+
+<main>
+	<div class="container">
+		<p>This project was built using Jekyll!</p>
+
+	</div>
 </main>
 <footer></footer>
 </body>

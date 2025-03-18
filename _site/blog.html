@@ -5,6 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Blog</title>
 	<link rel="stylesheet" href="/assets/css/main.css">
+	<script>
+		if (window.netlifyIdentity) {
+		  window.netlifyIdentity.on("init", (user) => {
+			if (!user) {
+			  window.netlifyIdentity.on("login", () => {
+				document.location.href = "/admin/";
+			  });
+			}
+		  });
+		}
+	  </script>
 	
 	  <script src="http://127.0.0.1:35729/livereload.js"></script>
 	
@@ -18,19 +29,29 @@
 		  },
 		});
 	  </script>
-	<header>
-		<h1><a href="/">My Website</a></h1>
-	</header>
-	<nav>
-  <a href="/">Home</a>
-  <a href="/blog/">Blog</a>
-  <a href="/portfolio/">Portfolio</a>
-  <a href="/about/">About</a>
-</nav>
-	<main>
-		<h1>Test</h1>
+	<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">Stewart Hines</a>
+    <nav>
+      <ul>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/portfolio/">Portfolio</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+	
+
+<header>
+	<div class="container">
 		<h2>Blog</h2>
-<ul>
+	</div>
+</header>
+<main>
+	<div class="container">
+		<ul>
   
 	<li>
 	  <a href="/2025/02/23/my-first-post.html">My First Blog Post</a> (February 23, 2025)
@@ -38,7 +59,8 @@
   
 </ul>
 
-	</main>
+	</div>
+</main>
 <footer></footer>
 </body>
 </html>

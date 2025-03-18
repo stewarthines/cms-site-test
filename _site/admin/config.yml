@@ -3,10 +3,20 @@ backend:
   repo: stewarthines/cms-site-test # GitHub repository name
   branch: main # Branch to publish changes to
 
+local_backend: true                # Required for local testing
+
 media_folder: "assets/uploads" # Folder for uploaded files
 public_folder: "assets/uploads" # Folder to access files from the front end
 
 collections:
+  - name: "posts" # Name of the collection
+    label: "Posts" # Label for the collection
+    folder: "_posts" # Folder where your portfolio items are stored
+    create: true # Allow creating new items
+    fields: # Fields for the portfolio items
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "body", label: "Body", widget: "markdown" }
   - name: "portfolio" # Name of the collection
     label: "Portfolio" # Label for the collection
     folder: "_portfolio" # Folder where your portfolio items are stored

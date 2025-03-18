@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Updated Project</title>
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<script>
+		if (window.netlifyIdentity) {
+		  window.netlifyIdentity.on("init", (user) => {
+			if (!user) {
+			  window.netlifyIdentity.on("login", () => {
+				document.location.href = "/admin/";
+			  });
+			}
+		  });
+		}
+	  </script>
+	
+	  <script src="http://127.0.0.1:35729/livereload.js"></script>
+	
+</head>
+<body>
+	<script>
+		CMS.init({ 
+		  config: { 
+			backend: { name: 'git-gateway', branch: 'main' },
+			load_config_file: false,
+		  },
+		});
+	  </script>
+	<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">Stewart Hines</a>
+    <nav>
+      <ul>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/portfolio/">Portfolio</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+	
+
+<main>
+	<div class="container">
+		<h1 id="about">About</h1>
+
+<p>This is a project to build a website. I wanted to have a CMS and host it on GitHub Pages because that’s cheap.</p>
+
+<h1 id="process">Process</h1>
+
+<p>I started by sketching in Figma. I began with a mobile layout and then moved to a desktop version. Once I had something I liked, I used ChatGPT to help me get Jekyll up and running.</p>
+
+<h1 id="working-in-figma">Working in Figma</h1>
+
+<p><img src="/assets//uploads/20240808-swh01285-hdr.jpg" alt="" /></p>
+
+<p><img src="assets/uploads/20240808-swh01285-hdr.jpg" alt="" /></p>
+
+<p>I used variables to create a simple design system.</p>
+
+	</div>
+</main>
+<footer></footer>
+</body>
+</html>

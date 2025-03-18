@@ -1,5 +1,6 @@
 title: "My Website"
 baseurl: ""  # Leave empty for GitHub Pages
+# baseurl: "/cms-site-test"
 url: "https://stewarthines.github.io"
 environment: development
 
@@ -11,8 +12,3 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
-
-decap_cms:
-  backend:
-    name: git-gateway
-    branch: main  # Branch for the CMS to operate on

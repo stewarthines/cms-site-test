@@ -1,6 +1,12 @@
-<nav>
-  <a href="{{ '/' | relative_url }}">Home</a>
-  <a href="{{ '/blog/' | relative_url }}">Blog</a>
-  <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
-  <a href="{{ '/about/' | relative_url }}">About</a>
-</nav>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="{{ '/' | relative_url }}">Stewart Hines</a>
+    <nav>
+      <ul>
+        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/portfolio/' | relative_url }}">Portfolio</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
